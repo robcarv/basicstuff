@@ -235,23 +235,11 @@ sections:
         statusCheckAllowInsecure: true
         statusCheck: true
         id: 0_2589_portainer
-      # - title: Netdata
-      #   icon: favicon
-      #   url: http://9.30.215.174:19999
-      #   statusCheck: true
-      #   statusCheckAllowInsecure: true
       - title: Duplicati
         icon: favicon
         url: http://9.30.94.202:8270/
         statusCheckAllowInsecure: true
         statusCheckAcceptCodes: '403'
-      #   id: 2_2589_duplicati
-      # - title: Heimdal
-      #   icon: favicon
-      #   url: http://0.0.0.0:11080/
-      #   statusCheckAllowInsecure: true
-      #   statusCheck: true
-      #   id: 3_2589_heimdal
       - title: 'git hub '
         description: git hub
         icon: favicon
