@@ -1,0 +1,376 @@
+appConfig:
+# to create a hash :
+# https://gchq.github.io/CyberChef/
+  auth:
+    users:
+    - user: robert
+      hash: xxxxxx
+      type: admin
+  statusCheck: false
+  theme: nord
+  fontAwesomeKey: c94dc2b452
+  layout: horizontal
+  iconSize: large
+  language: en
+pageInfo:
+  title: Hello, User
+  description: General browser startpage
+  navLinks: []
+  footerText: ''
+  logo: >-
+    https://www.kindpng.com/picc/m/132-1324993_funny-skull-png-transparent-png.png
+sections:
+  - name: International Time
+    icon: fad fa-clock
+    widgets:
+      - type: clock
+        options:
+          timeZone: Europe/Dublin
+          format: en-GB
+          hideDate: false
+          hideSeconds: true
+        id: 0_1799_clock
+      - type: clock
+        options:
+          timeZone: America/Sao_Paulo
+          format: en-GB
+          hideDate: false
+          hideSeconds: true
+        id: 1_1799_clock
+      - type: clock
+        options:
+          timeZone: America/New_York
+          format: en-GB
+          hideDate: false
+          hideSeconds: true
+        id: 2_1799_clock
+  - name: Today
+    icon: far fa-smile-beam
+    widgets:
+      - type: weather
+        options:
+          apiKey: 08428833b781ba6b264fc5c7e571b0c5
+          city: Dublin, IE
+          hideDetails: false
+        id: 0_513_weather
+      - type: public-holidays
+        options:
+          country: IE
+          holidayType: all
+          monthsToShow: 4
+        id: 1_513_publicholidays
+      - type: public-holidays
+        options:
+          country: BR
+          holidayType: all
+          monthsToShow: 4
+        id: 2_513_publicholidays
+      - type: public-holidays
+        options:
+          country: US
+          holidayType: all
+          monthsToShow: 4
+        id: 3_513_publicholidays
+  - name: IBM - Productivity
+    icon: https://img.icons8.com/color/344/ibm.png
+    items:
+      - title: IBM-email
+        description: Primary email account
+        icon: favicon
+        url: https://outlook.office.com/mail/
+        hotkey: 1
+        tags:
+          - hosted
+          - personal
+          - email
+          - mail
+        statusCheck: true
+        id: 0_1627_ibmemail
+      - title: IBM-BOX
+        icon: favicon
+        url: https://ibm.account.box.com/login
+        description: cloud box
+        tags:
+          - hosted
+          - personal
+          - email
+          - mail
+        hotkey: 2
+        statusCheck: true
+        id: 1_1627_ibmbox
+      - title: IBM Work-Day
+        icon: favicon
+        url: https://wd5.myworkday.com/ibm/d/home.htmld
+        description: HR-Salary
+        tags:
+          - hosted
+          - personal
+          - forwarder
+          - HR
+          - salary
+        hotkey: 3
+        statusCheck: true
+        id: 2_1627_ibmworkday
+      - title: IBM- Citrix
+        icon: favicon
+        url: https://mscictx.im-ies.ibm.com/vpn/index.html
+        description: BLUE DIAMOND
+        tags:
+          - hosted
+          - personal
+          - Citrix
+          - Blue Diamond
+        hotkey: 4
+        id: 3_1627_ibmcitrix
+      - title: W3
+        icon: https://w3.ibm.com/favicon.ico
+        url: https://w3.ibm.com/#/
+        description: IBM + Firstpage, CalDAV sync
+        tags:
+          - hosted
+          - personal
+          - caldav
+          - calendar
+          - contacts
+          - tasks
+          - planning
+        hotkey: 5
+        id: 4_1627_w
+      - title: Deploy-FTM
+        icon: favicon
+        url: https://ftmhurlnxt1.hursley.ibm.com:8443/#components/components
+        description: Deploy FTM base
+        tags:
+          - hosted
+          - personal
+          - caldav
+          - tasks
+          - planning
+        hotkey: 6
+        statusCheckAllowInsecure: true
+        statusCheckAcceptCodes: '401'
+        statusCheck: true
+        id: 5_1627_deployftm
+      - title: PMR
+        icon: favicon
+        url: >-
+          https://swgjazz.ibm.com:8022/ccm/web/projects/FTM%20Immediate%20Payments#action=com.ibm.team.dashboard.viewDashboard
+        target: newtab
+        statusCheck: true
+        id: 6_1627_pmr
+      - title: IBM-GIT
+        description: GitHub IBM
+        icon: favicon
+        url: https://github.ibm.com/login
+        target: newtab
+        statusCheck: true
+        id: 7_1627_ibmgit
+      - title: Fyre machine
+        description: VM
+        icon: favicon
+        url: https://fyre.ibm.com/
+        target: newtab
+        statusCheck: true
+        id: 8_1627_fyremachine
+      - title: you leaning
+        description: learning
+        icon: https://img.icons8.com/office/344/learning.png
+        url: https://yourlearning.ibm.com/
+        target: newtab
+        statusCheck: true
+        id: 9_1627_youleaning
+      - title: Trello
+        description: Trello
+        icon: favicon
+        url: https://trello.com/b/neuuXony/work
+        target: newtab
+        statusCheck: true
+        id: 10_1627_trello
+      - title: Jfrog
+        description: 'Artefacts '
+        icon: https://img.icons8.com/emoji/344/frog-emoji.png
+        url: https://eu.artifactory.swg-devops.com/ui/packages
+        target: newtab
+        statusCheck: true
+        color: '#7FFFD4'
+        id: 11_1627_jfrog
+      - title: IBM -Udemy
+        description: Udemy
+        icon: favicon 
+        url: https://ibm-learning.udemy.com/organization/home/
+        target: newtab
+        statusCheck: true
+        id: 12_1627_ibmudemy
+      - title: readme - generator 
+        description: readme
+        icon: favicon
+        url: https://readme.so/
+        target: newtab
+        statusCheck: true
+        displayData:
+        sortBy: most-used
+        rows: 3
+        cols: 2
+        collapsed: false
+        hideForGuests: false
+      - title: Ecurep 
+        description: Ecurep
+        icon: favicon
+        url: https://ecurep.mainz.de.ibm.com/
+        target: newtab
+        statusCheck: true
+        displayData:
+        sortBy: most-used
+        rows: 3
+        cols: 2
+        collapsed: false
+        hideForGuests: true
+  - name: Localstacks and containers
+    icon: https://img.icons8.com/color/344/docker.png
+    items:
+      - title: portainer
+        icon: >-
+          https://f.hubspotusercontent40.net/hubfs/4731999/Brand%20Assets/Favicon/Portainer%20BE%20Favicon%20icon.svg
+        url: http://9.30.94.202:9000/
+        statusCheckAllowInsecure: true
+        statusCheck: true
+        id: 0_2589_portainer
+      # - title: Netdata
+      #   icon: favicon
+      #   url: http://9.30.215.174:19999
+      #   statusCheck: true
+      #   statusCheckAllowInsecure: true
+      - title: Duplicati
+        icon: favicon
+        url: http://9.30.94.202:8270/
+        statusCheckAllowInsecure: true
+        statusCheckAcceptCodes: '403'
+      #   id: 2_2589_duplicati
+      # - title: Heimdal
+      #   icon: favicon
+      #   url: http://0.0.0.0:11080/
+      #   statusCheckAllowInsecure: true
+      #   statusCheck: true
+      #   id: 3_2589_heimdal
+      - title: 'git hub '
+        description: git hub
+        icon: favicon
+        url: https://github.com/robcarv
+        target: sametab
+        statusCheck: true
+        id: 4_2589_github
+  - name: raspberry
+    icon: https://img.icons8.com/color/344/raspberry-pi.png
+    items:
+      - title: honeygain
+        icon: favicon
+        url: https://dashboard.honeygain.com/
+        statusCheckAllowInsecure: true
+        statusCheck: true
+        id: 0_986_honeygain
+      - title: peer2profit
+        icon: favicon
+        url: https://dashboard.peer2profit.app/dashboard
+        statusCheckAllowInsecure: true
+        statusCheckAcceptCodes: '403'
+        statusCheck: true
+        id: 1_986_peerprofit
+      - title: iproyal
+        icon: favicon
+        url: https://pawns.iproyal.com/login
+        statusCheckAllowInsecure: true
+        statusCheck: true
+        id: 2_986_iproyal
+      - title: Duplicati
+        icon: favicon
+        url: http://http://rhetoric1.fyre.ibm.com:8270/ngax/index.html
+        statusCheckAllowInsecure: true
+        statusCheck: true
+        id: 3_986_duplicgati
+      - title: EarnApp
+        icon: favicon
+        url: https://earnapp.com/dashboard/
+        statusCheckAllowInsecure: true
+        statusCheck: true
+        id: 4_986_earnapp
+      - title: Portainer -raspberry
+        icon: >-
+          https://f.hubspotusercontent40.net/hubfs/4731999/Brand%20Assets/Favicon/Portainer%20BE%20Favicon%20icon.svg
+        url: http://http://rhetoric1.fyre.ibm.com:9000
+        statusCheckAllowInsecure: true
+        statusCheck: true
+        id: 5_986_portainerraspberry
+  - name: Social & News
+    icon: far fa-thumbs-up
+    items:
+      - title: UOL
+        icon: >-
+          https://conteudo.imguol.com.br/c/home/layout/vueland/icons/brand/uol-logo-full.svg?v4
+        url: https://www.uol.com.br/
+        id: 0_1118_uol
+      - title: YouTube
+        icon: si-youtube
+        url: https://youtube.com/
+        id: 1_1118_youtube
+      - title: Instagram
+        icon: si-instagram
+        url: https://www.instagram.com/
+        id: 2_1118_instagram
+      - title: BBC-News
+        icon: si-bbc
+        url: https://bbc.co.uk/news
+        id: 3_1118_bbcnews
+      - title: RTE-News
+        icon: si-rte
+        url: https://www.rte.ie/news/
+        id: 4_1118_rtenews
+      - title: Linkedin
+        description: Job
+        icon: si-linkedin
+        url: https://www.linkedin.com/in/rac-carvalho/
+        target: newtab
+        id: 5_1118_linkedin
+  - name: rhetoric1 and gpi-usage
+    icon: fas fa-tachometer
+    widgets:
+      - type: gl-current-cpu
+        options:
+          hostname: http://rhetoric1.fyre.ibm.com:61208                      
+        id: 0_1826_glcurrentcpu
+      - type: gl-current-cores
+        options:
+          hostname: http://rhetoric1.fyre.ibm.com:61208
+        id: 1_1826_glcurrentcores
+  - name: rhetoric1 CPU usage
+    icon: fas fa-solid
+    widgets:
+      - type: gl-current-mem
+        options:
+          hostname: http://rhetoric1.fyre.ibm.com:61208
+        id: 0_1568_glcurrentmem
+      - type: gl-ip-address
+        options:
+          hostname: http://rhetoric1.fyre.ibm.com:61208
+          limit: 500
+        id: 1_1568_glipaddress
+      - type: gl-cpu-temp
+        options:
+          hostname: http://rhetoric1.fyre.ibm.com:61208
+          limit: 500
+        id: 2_1568_glcputemp
+  - name: rhetoric1 CPU History
+    icon: fas fa-solid
+    widgets:
+      - type: gl-cpu-history
+        options:
+          hostname: http://rhetoric1.fyre.ibm.com:61208
+        id: 0_1018_glcpuhistory
+  - name: rhetoric1 disk space
+    icon: 💽
+    widgets:
+      - type: gl-disk-space
+        options:
+          hostname: http://rhetoric1.fyre.ibm.com:61208
+          limit: 60
+        id: 0_1969_gldiskspace
+

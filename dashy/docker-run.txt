@@ -1,0 +1,7 @@
+docker run -d \
+  -p 8295:80 \
+  --volume /home/robert/Documents/docker/dashy/public/conf.yml:/app/public/conf.yml \
+  --volume /home/robert/Documents/docker/dashy/icons:/app/public/item-icons/icons \
+  --name dashy \
+  --restart=unless-stopped \
+  lissy93/dashy:latest
