@@ -1,0 +1,4 @@
+*.sqlite
+*.sqlite3
+dashy/public/conf.yml
+config/*.sqlite
